@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -25,7 +24,7 @@ public class ShootingSystem : MonoBehaviour
         while (enabled)
         {
             Vector3 direction = (_target.position - _transform.position).normalized;
-            Console.WriteLine();
+
             Bullet bullet = Instantiate(_bullet, _transform.position + direction, Quaternion.identity);
 
             if (bullet.TryGetComponent(out Rigidbody rigidbody))
