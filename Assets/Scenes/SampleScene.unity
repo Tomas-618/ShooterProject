@@ -140,7 +140,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &695858357
 Transform:
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ffd516dc255ab42a69c7622dfb7311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletSpeed: 20
+  _shootingDelay: 3
   _target: {fileID: 695858357}
-  _bullet: {fileID: 0}
-  _number: 0
-  _timeWaitShooting: 0
+  _bullet: {fileID: 7761771760360179702, guid: 45f73e0e932bb4944b9e25a827cb098e, type: 3}

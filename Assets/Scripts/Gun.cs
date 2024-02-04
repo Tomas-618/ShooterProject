@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class ShootingSystem : MonoBehaviour
+public class Gun : MonoBehaviour
 {
     [SerializeField, Min(0)] private float _bulletSpeed;
     [SerializeField, Min(0)] private float _shootingDelay;

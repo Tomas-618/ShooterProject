@@ -28,18 +28,14 @@ public class Mover : MonoBehaviour
             ChangeArrivePoint();
     }
 
-    private Vector3 ChangeArrivePoint()
+    private void ChangeArrivePoint()
     {
         _currentArrivePointIndex++;
 
         if (_currentArrivePointIndex == _arrivePoints.Length)
             _currentArrivePointIndex = 0;
 
-        Vector3 arrivePointPosition = _arrivePoints[_currentArrivePointIndex].position;
-
-        LookAtArrivePoint(arrivePointPosition);
-
-        return arrivePointPosition;
+        LookAtArrivePoint(_arrivePoints[_currentArrivePointIndex].position);
     }
 
     private void LookAtArrivePoint(in Vector3 arrivePointPosition) =>
